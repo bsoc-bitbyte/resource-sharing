@@ -4,8 +4,10 @@ Welcome to the College Resource Sharing Website! This platform is designed to fa
 
 ## Overview
 
-Every year we require notes and previous year questions to study for our exams and for this we contact many people and sometimes we don't get the material at the right time.
-So to copewith that we are building this resource sharing webiste to help the students so that they get the right resources at the right time.
+Every year we require notes and previous year questions to study for our exams and for this we contact many people and sometimes we don't get the resources at the right time.
+<br>
+So to cope up with that we are building this resource sharing webiste to help the students so that they get the right resources at the right time.
+<br>
 More deatils of the project our provided at this [Notion Link](https://grey-soybean-258.notion.site/Resource-Sharing-da954660ddf44771895d56321195aae4).
 
 ## Tech Stack
@@ -47,7 +49,7 @@ More deatils of the project our provided at this [Notion Link](https://grey-soyb
     npm run start
 ```
 
-7. Access the live development server at [localhost:3000](http://localhost:3000).
+7. Access the live development server at [localhost:3000](http://localhost:5173).
 
 
 
