@@ -1,0 +1,43 @@
+@import url('./fonts.css');
+@import url('./navbar.css');
+@import url('./scrollbar.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+  --primary-color: #1a1a1c;
+  --page-color: rgb(249 250 251);
+  --back-shadow: #3a3e6f;
+  --front-edge: #24263e;
+  --yellow: #ffd45c;
+  --pink: #fb5784;
+  --blue: #5F4DFF;
+  --text-dull: #DED3B6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: var(--page-color);
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  cursor: default;
+  color: var(--primary-color) !important;
+}
+
+li {
+  list-style: none;
+}

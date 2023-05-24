@@ -1,0 +1,20 @@
+.nav-li {
+    padding-block: 0.5rem !important;
+    padding-inline: 1rem !important;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 0 0 0 var(--yellow);
+    transition: all 0.3s ease-in-out !important;
+}
+
+.nav-li:hover {
+    color: #fafafa !important;
+    border-bottom: solid 0.15rem var(--yellow);
+    box-shadow: inset 0 -150px 0 0 var(--pink);
+}
+
+@media screen and (max-width: 960px) {
+    .nav-li {
+        color: #1a1a1c !important;
+        border-bottom: none;
+    }
+}
