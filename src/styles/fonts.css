@@ -1,0 +1,112 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700;900&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: Monument;
+    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: Monument;
+    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Regular.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: Monument;
+    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Ultrabold.otf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block
+}
+
+.comfort {
+    font-family: 'Comfortaa', cursive !important;
+    font-weight: 900;
+}
+
+.revalia {
+    font-family: 'Revalia', cursive !important;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.rubik {
+    font-family: 'Rubik Iso', cursive !important;
+}
+
+.bungee {
+    font-family: 'Bungee Outline', cursive !important;
+}
+
+.kanit {
+    font-family: 'Kanit', sans-serif !important;
+}
+
+.orbi {
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.archivo {
+    font-family: 'Archivo', sans-serif !important;
+}
+
+.caveat {
+    font-family: 'Caveat', cursive !important;
+}
+
+.railway {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.space {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.workSans {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.mento {
+    font-family: 'Sacramento', cursive !important;
+}
+
+.bound {
+    font-family: 'Unbounded', cursive !important;
+}
+
+.lobster {
+    font-family: 'Lobster Two', cursive !important;
+}
+
+.monu {
+    font-family: 'Monument', sans-serif !important;
+}
