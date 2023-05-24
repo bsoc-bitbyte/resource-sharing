@@ -16,7 +16,7 @@ More deatils of the project our provided at this [Notion Link](https://grey-soyb
 - It is build and deployed with [Vite](https://vitejs.dev/)
 
 ##### Prerequistes
-- Configuration of Git(https://docs.github.com/en/get-started/quickstart/set-up-git) in your system.
+- Configuration of [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) in your system.
 - IDE (recommendation: VSCode)
 - Nothing else you are good to go!!
 
@@ -46,10 +46,10 @@ More deatils of the project our provided at this [Notion Link](https://grey-soyb
 6. Run the website locally.
 
 ```bash
-    npm run start
+    npm run dev
 ```
 
-7. Access the live development server at [localhost:3000](http://localhost:5173).
+7. Access the live development server at [localhost:5173](http://localhost:5173).
 
 
 
