@@ -34,13 +34,13 @@ The following is a summary of the ideal contribution flow. Please, note that Pul
 
 
 ## How to create an issue
--Navigate to the repository: 
+`-Navigate to the repository`: 
 Go to the GitHub website and locate the repository where you want to create the issue. You can search for the repository or use the repository's URL to access it directly.
 
--Access the "Issues" tab:
+`-Access the "Issues" tab`:
  Once you're on the repository page, find the "Issues" tab in the top navigation bar and click on it. This tab will lead you to the issues management page.
 
--Click on "New issue":
+`-Click on "New issue":`
  On the "Issues" page, you'll find a green button labeled "New issue" on the right-hand side. Click on it to proceed with creating a new issue.
 
 
@@ -60,6 +60,7 @@ Creating a pull request on GitHub involves the following steps:
 6.Select the appropriate branches for the base and head.
 
 7.Review and provide details about your changes.
+
 8.Create the pull request.
 
 9.Engage in discussion by responding to comments and addressing feedback.
