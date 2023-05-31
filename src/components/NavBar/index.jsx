@@ -14,8 +14,6 @@ const NavBar = () => {
     {
       root.classList.remove('dark');
     }
-    console.log(root);
-    console.log(darkMode);
   }, [darkMode]);
 
   const toggleDarkMode = () => {
