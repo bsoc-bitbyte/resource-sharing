@@ -6,7 +6,7 @@ module.exports = withMT({
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: ['class', '[data-theme="dark"]'],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
