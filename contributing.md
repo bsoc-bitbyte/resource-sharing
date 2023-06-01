@@ -34,6 +34,7 @@ The following is a summary of the ideal contribution flow. Please, note that Pul
 
 
 ## How to create an issue
+
 - Navigate to the repository : 
 Go to the GitHub website and locate the repository where you want to create the issue. You can search for the repository or use the repository's URL to access it directly.
 
