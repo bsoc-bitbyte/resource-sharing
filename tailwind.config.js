@@ -32,6 +32,9 @@ module.exports = withMT({
         'max-2xl': {
           'max': '1536px'
         },
+        'anti-ham' : {
+          'min' : '500px'
+        }
       }
     },
   },
