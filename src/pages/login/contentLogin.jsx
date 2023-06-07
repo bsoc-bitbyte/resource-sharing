@@ -2,15 +2,15 @@ import React from 'react';
 
 function LoginForm() {
   return (
-    <div className=" h-screen flex items-center justify-center"   style={{
-      backgroundImage: 'url("src/assets/login-page-background-image-3.jpg")',
+    <div className=" h-screen flex items-center justify-center border-black"   style={{
+      backgroundImage: 'url("src/assets/loginpage-background-image.jpeg")',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       filter: 'blur(0px)'
  
     }}>
-      <div className="bg-white rounded-lg shadow-lg w-96" >
+      <div className="bg-white rounded-lg shadow-lg w-96 border-double border-4 border-sky-500 border-teal-100" >
       <div className="flex justify-between items-center text-center w-full pl-10 pr-10 pt-5 pb-1">
       <h1 className="text-2xl font-bold" style={{ fontFamily: 'monospace' }}>Login</h1>
 
