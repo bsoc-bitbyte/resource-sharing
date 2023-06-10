@@ -2,7 +2,10 @@
 const withMT = require('@material-tailwind/react/utils/withMT');
 
 module.exports = withMT({
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
@@ -24,13 +27,16 @@ module.exports = withMT({
           max: '1024px',
         },
         'max-xl': {
-          max: '1280px',
+          'max': '1280px'
         },
         'max-2xl': {
-          max: '1536px',
+          'max': '1536px'
         },
-      },
+        'anti-ham' : {
+          'min' : '500px'
+        }
+      }
     },
   },
   plugins: [],
-});
+})
