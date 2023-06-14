@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
+const withMT = require('@material-tailwind/react/utils/withMT');
 
 module.exports = withMT({
   content: [
@@ -11,21 +11,21 @@ module.exports = withMT({
   theme: {
     extend: {
       screens: {
-        'mobile': {
-          'max': '500px'
+        mobile: {
+          max: '500px',
         },
         'anti-mobile': {
-          'min': '500px',
-          'max': '640px'
+          min: '500px',
+          max: '640px',
         },
         'max-sm': {
-          'max': '640px'
+          max: '640px',
         },
         'max-md': {
-          'max': '768px'
+          max: '768px',
         },
         'max-lg': {
-          'max': '1024px'
+          max: '1024px',
         },
         'max-xl': {
           'max': '1280px'
@@ -45,6 +45,10 @@ module.exports = withMT({
       'tblue':'#1DA1F2',
       'tyellow':'#FCF300'
        }
+        'anti-ham' : {
+          'min' : '500px'
+        }
+      }
     },
   },
  
