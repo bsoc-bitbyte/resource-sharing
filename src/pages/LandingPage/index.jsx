@@ -4,17 +4,13 @@ import HeroSection from '../../components/HeroSection'
 import Content from './content'
 import Footer from '../../components/Footer'
 import Login from '../login/index'
-
-
-
 const LandingPage = () => {
   return (
     <>
-        {/* <NavBar />
+        <NavBar />
         <HeroSection />
         <Content />
-        <Footer /> */}
-        <Login/>
+        <Footer />
     </>
   )
 }
