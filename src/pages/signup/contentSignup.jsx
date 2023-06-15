@@ -29,11 +29,7 @@ function SignForm() {
             <label className="text-gray-500">Institute Email ID</label>
             <input type="email" className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none" required />
           </div>
-          {/* <div className="mb-6">
-            <label className="text-gray-500">Username</label>
-            <input type="text" className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none" required />
-          </div> */}
-          <div className="mb-6">
+             <div className="mb-6">
             <label className="text-gray-500">Password</label>
             <input type="password" className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none" required />
           </div>
@@ -41,15 +37,7 @@ function SignForm() {
             <label className="text-gray-500">Confirm Password</label>
             <input type="password" className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none" required />
           </div>
-          {/* <div className="flex items-center mb-6">
-            <div className="flex-1 text-sm text-gray-600">
-              <a href="#" className="text-blue-500 hover:underline">Forgot Password?</a>
-            </div>
-            <div className="checkb1">
-              <input type="checkbox" id="remember" className="form-checkbox" />
-              <label htmlFor="remember" className="ml-2 text-sm text-gray-600">Remember Me</label>
-            </div>
-          </div> */}
+         
           <input type="submit" value="SignUp" className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg cursor-pointer hover:bg-blue-600" />
           <div className="mt-6 text-center text-base text-gray-600">
             Already a member? <a href="#" className="text-blue-500 hover:underline">Login</a>
