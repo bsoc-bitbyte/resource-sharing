@@ -1,10 +1,10 @@
 
 import React from 'react'
 import SignForm from './contentSignup'
-const Signin  = () => {
+const Signup  = () => {
   return (
  <SignForm/>
   )
 }
 
-export default Signin
+export default Signup
