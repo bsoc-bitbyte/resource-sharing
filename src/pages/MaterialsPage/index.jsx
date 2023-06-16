@@ -17,7 +17,7 @@ const MaterialsPage = () => {
       console.log(error);
     }
   };
-  const categoryimage = "'../src/assets/BackgroundImage.png'";
+  const categoryimage = "BackgroundImage.png";
   const {category} = useParams();
   const [materials, setMaterials] = useState([]);
 

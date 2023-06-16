@@ -6,7 +6,7 @@ const MaterialCard = (props) => {
     <div className='flex items-center justify-center flex-col'>
      <div className='w-[90vw] bg-[#FAFAFA] flex items-center justify-center m-5 shadow-[2px_4px_8px_rgba(0,0,0,0.25)] rounded-2xl max-md:flex-col'>
         <img className='w-64 rounded-2xl m-3' src={props.material.image} alt="" />
-        <div className='flex items-center justify-center w-full flex-col m-2'>
+        <div className='flex items-center justify-center w-full flex-col m-2 max-md:p-3'>
           <div className='flex items-center justify-center w-full'>
             <div className='flex items-center justify-left text-3xl text-black/[0.75] w-full'>
               {props.material.title}
@@ -24,7 +24,7 @@ const MaterialCard = (props) => {
               </div> 
             ))}
           </div>
-          <div className='flex items-end justify-end h-full w-full h-28'>
+          <div className='flex items-end justify-end w-full h-28'>
             <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Download
             </button>
