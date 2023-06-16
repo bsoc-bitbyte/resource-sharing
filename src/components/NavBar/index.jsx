@@ -37,6 +37,7 @@ const NavBar = () => {
             <img className={`h-[80%] ${(darkMode)?"visible":"hidden"}`} src="../src/assets/LightModeIcon.svg" alt="" />
           </button>
           <button className='mobile:hidden monu text-md rounded-xl bg-[#3B82F6] text-white mx-3 my-2 px-3 py-2 font-normal shadow-[0px_6px_17px_rgba(0,0,0,0.25)], inset-shadow-[0px_10px_34px_rgba(0,0,0,0.25)]' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}>Sign Up</button>
+          <button className='mobile:hidden monu text-md rounded-xl bg-[#3B82F6] text-white mx-3 my-2 px-3 py-2 font-normal shadow-[0px_6px_17px_rgba(0,0,0,0.25)], inset-shadow-[0px_10px_34px_rgba(0,0,0,0.25)]' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}>Login</button>
         </div>
         <div className='flex w-3/4 anti-ham:hidden flex-row-reverse items-center'>
           <button
