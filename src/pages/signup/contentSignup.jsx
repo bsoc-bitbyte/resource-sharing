@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function SignForm() {
   return (
@@ -40,7 +41,7 @@ function SignForm() {
          
           <input type="submit" value="SignUp" className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg cursor-pointer hover:bg-blue-600" />
           <div className="mt-6 text-center text-base text-gray-600">
-            Already a member? <a href="#" className="text-blue-500 hover:underline">Login</a>
+            Already a member? <a href="#" className="text-blue-500 hover:underline"><Link to="/login">Login</Link></a>
           </div>
         </form>
       </div>
