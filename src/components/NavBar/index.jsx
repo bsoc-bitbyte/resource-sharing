@@ -30,7 +30,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className='sticky flex w-screen justify-center flex-col items-center'>
+    <div className='sticky top-0 z-10 flex w-screen justify-center flex-col items-center'>
       <div className='flex rounded-2xl shadow-md w-[90vw] mx-3 my-4 px-10 py-1 bg-[#F4F4F5] dark:bg-[#44403C] dark:text-white'>
         <div className='flex w-1/4 monu font-normal px-2 py-2 text-xl items-center'>
           <Link to='/'>UniShare</Link>
