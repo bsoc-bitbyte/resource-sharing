@@ -9,6 +9,7 @@ import cardData from '../../config/CardData.mjs';
 
 
 const MaterialsPage = () => {
+  const [materials, setMaterials] = useState([]);
   const {category} = useParams();
   let categoryid = -1;
   cardData.map((value) => {
@@ -20,21 +21,44 @@ const MaterialsPage = () => {
   if (categoryid != -1)
   {
       const categoryimage = cardData[categoryid-1].background;
-      const [materials, setMaterials] = useState([]);
-      const fetchmaterials = async () => {
+
+      const fetchcachematerials = async () => {
         try {
           const response = await fetch(cardData[categoryid-1].fetchlink);
-          const materials = await response.json();
-          setMaterials(materials);
+          const rdata = await response.json();
+          setMaterials(rdata);
+          if (rdata.length>0)
+          {
+            const cache={
+              data: rdata,
+              expiry: new Date(new Date().getTime() + 3*24*60*60*1000) 
+            };
+            localStorage.setItem('MATERIALS_CACHE', JSON.stringify(cache));
+          }
         } catch (error) {
           console.log(error);
         }
       };
     
       useEffect(() => {
-    
-        fetchmaterials();
-      }, [materials]);
+        const cacheddata = JSON.parse(localStorage.getItem('MATERIALS_CACHE'));
+        if (cacheddata)
+        {
+          const now = new Date().getTime();
+          if (now < Date.parse(cacheddata.expiry))
+          {
+            setMaterials(cacheddata.data);
+          }
+          else
+          {
+            fetchcachematerials();
+          }
+        }
+        else
+        {
+          fetchcachematerials();
+        }
+        }, []);
     
       return (
         <>

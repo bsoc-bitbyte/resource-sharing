@@ -4,7 +4,7 @@ const MaterialCard = (props) => {
   let key=0;
   return (
     <div className='flex items-center justify-center flex-col'>
-     <div className='w-[90vw] bg-[#FAFAFA] flex items-center justify-center m-5 shadow-[2px_4px_8px_rgba(0,0,0,0.25)] rounded-2xl max-md:flex-col'>
+     <div className='w-[90vw] bg-[#FAFAFA] flex items-center justify-center m-5 shadow-[2px_4px_8px_rgba(0,0,0,0.25)] rounded-2xl max-md:flex-col px-3'>
         <img className='w-64 rounded-2xl m-3' src={props.material.image} alt="" />
         <div className='flex items-center justify-center w-full flex-col m-2 max-md:p-3'>
           <div className='flex items-center justify-center w-full'>
