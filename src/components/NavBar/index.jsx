@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
+
 
 const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +24,10 @@ const NavBar = () => {
   const open = () => {
     setOpenMenu(!openmenu);
   }
-
+  
+  const redirect = () => {
+    useHref
+  }
 
   return (
     <div className='sticky flex w-screen justify-center flex-col items-center'>
@@ -36,7 +40,9 @@ const NavBar = () => {
             <img className={`h-[80%] ${(darkMode)?"hidden":"visible"}`} src="../src/assets/DarkModeIcon.svg" alt="" />
             <img className={`h-[80%] ${(darkMode)?"visible":"hidden"}`} src="../src/assets/LightModeIcon.svg" alt="" />
           </button>
+          <Link to="/signup">
           <button className='mobile:hidden monu text-md rounded-xl bg-[#3B82F6] text-white mx-3 my-2 px-3 py-2 font-normal shadow-[0px_6px_17px_rgba(0,0,0,0.25)], inset-shadow-[0px_10px_34px_rgba(0,0,0,0.25)]' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}>Sign Up</button>
+          </Link>
         </div>
         <div className='flex w-3/4 anti-ham:hidden flex-row-reverse items-center'>
           <button
@@ -68,6 +74,7 @@ const NavBar = () => {
       </div>
       <div className='flex anti-ham:hidden hidden rounded-2xl w-[45vw] mx-3 my-0 py-1 bg-[#F4F4F5] dark:bg-[#44403C] dark:text-white items-center justify-center border-2 border-solid border-gray-300 absolute top-[68px] right-[8px]' id='hammenu'>
         <hr />
+        
         <button className='monu text-md rounded-xl bg-[#3B82F6] text-white mx-3 my-2 px-3 py-2 font-normalshadow-md' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}>Sign Up</button>
       </div>
     </div>
