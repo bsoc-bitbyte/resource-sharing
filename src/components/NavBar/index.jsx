@@ -25,10 +25,6 @@ const NavBar = () => {
     setOpenMenu(!openmenu);
   }
   
-  const redirect = () => {
-    useHref
-  }
-
   return (
     <div className='sticky top-0 z-10 flex w-screen justify-center flex-col items-center'>
       <div className='flex rounded-2xl shadow-md w-[90vw] mx-3 my-4 px-10 py-1 bg-[#F4F4F5] dark:bg-[#44403C] dark:text-white'>
