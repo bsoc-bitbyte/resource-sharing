@@ -71,7 +71,8 @@ const NavBar = () => {
       <div className='flex anti-ham:hidden hidden rounded-2xl w-[52vw] mx-3 my-1 py-1 bg-[#F4F4F5] dark:bg-[#44403C] dark:text-white items-center justify-center border-2 border-solid border-gray-300 absolute top-[68px] right-[8px]' id='hammenu'>
         <hr />
         
-        <button className='monu text-md rounded-xl bg-[#3B82F6] text-white mx-3 my-2 px-3 py-2 font-normalshadow-md' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}>Sign Up</button>
+       
+        <button className='monu text-sm rounded-xl bg-[#3B82F6] text-white mx-1 my-1 px-3 py-2 font-normal shadow-[0px_6px_17px_rgba(0,0,0,0.25)], inset-shadow-[0px_10px_34px_rgba(0,0,0,0.25)]' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}><Link to='/signup'>SignUp</Link></button>
 
         <button className='monu text-sm rounded-xl bg-[#3B82F6] text-white mx-1 my-1 px-3 py-2 font-normal shadow-[0px_6px_17px_rgba(0,0,0,0.25)], inset-shadow-[0px_10px_34px_rgba(0,0,0,0.25)]' style={{boxShadow: "0px 6px 17px rgba(0, 0, 0, 0.25), inset 0px 10px 34px rgba(0, 0, 0, 0.25)"}}><Link to='/login'>Login</Link></button>
       </div>
