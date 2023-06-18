@@ -22,43 +22,19 @@ const MaterialsPage = () => {
   {
       const categoryimage = cardData[categoryid-1].background;
 
-      const fetchcachematerials = async () => {
+      const fetchmaterials = async () => {
         try {
           const response = await fetch(cardData[categoryid-1].fetchlink);
           const rdata = await response.json();
           setMaterials(rdata);
-          if (rdata.length>0)
-          {
-            const cache={
-              data: rdata,
-              expiry: new Date(new Date().getTime() + 3*24*60*60*1000) 
-            };
-            localStorage.setItem('MATERIALS_CACHE', JSON.stringify(cache));
-          }
         } catch (error) {
           console.log(error);
         }
       };
     
       useEffect(() => {
-        const cacheddata = JSON.parse(localStorage.getItem('MATERIALS_CACHE'));
-        if (cacheddata)
-        {
-          const now = new Date().getTime();
-          if (now < Date.parse(cacheddata.expiry))
-          {
-            setMaterials(cacheddata.data);
-          }
-          else
-          {
-            fetchcachematerials();
-          }
-        }
-        else
-        {
-          fetchcachematerials();
-        }
-        }, []);
+        fetchmaterials();
+      }, []);
     
       return (
         <>
