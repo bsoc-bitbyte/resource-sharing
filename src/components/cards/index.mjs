@@ -1,4 +1,5 @@
 import CategoryCards from './CategoryCards';
-import MaterialListingCards from './MaterialListingCards';
+import MaterialCard from './MaterialCard';
+import MaterialIntro from './MaterialIntro';
 
-export { CategoryCards, MaterialListingCards };
+export { CategoryCards, MaterialCard, MaterialIntro };

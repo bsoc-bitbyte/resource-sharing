@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function LoginForm() {
   return (
     <div className=" h-screen flex items-center justify-center border-black"   style={{
-      backgroundImage: 'url("src/assets/loginpage-background-image.jpeg")',
+      backgroundImage: 'url("/loginpage-background-image.jpeg")',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -16,7 +16,7 @@ function LoginForm() {
       <h1 className="text-2xl font-bold" style={{ fontFamily: 'monospace' }}>Login</h1>
 
   <h2 className="flex items-center justify-end">
-<img src="./src/assets/iiitdmj-logo.jpg" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
+<img src="/iiitdmj-logo.jpg" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
      IIITDMJ
   </h2>
   </div>
