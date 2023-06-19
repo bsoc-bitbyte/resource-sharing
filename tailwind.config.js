@@ -15,10 +15,10 @@ module.exports = withMT({
           max: '400px',
         },
         mobile: {
-          max: '500px',
+          max: '531px',
         },
         'anti-mobile': {
-          min: '500px',
+          min: '531px',
           max: '640px',
         },
         'max-sm': {
