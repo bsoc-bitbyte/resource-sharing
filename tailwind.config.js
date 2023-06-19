@@ -12,10 +12,11 @@ module.exports = withMT({
     extend: {
       screens: {
         mobile: {
-          max: '500px',
+          max: '531px',
         },
+
         'anti-mobile': {
-          min: '500px',
+          min: '531px',
           max: '640px',
         },
         'max-sm': {
@@ -33,20 +34,8 @@ module.exports = withMT({
         'max-2xl': {
           'max': '1536px'
         },
-      },
-      colors: {
-      'main': '#e002a2',
-      'second': '#47019d',
-      'three': '#e00256',
-      'black': '#212121',
-      'white': '#ffffff',
-      'gray': '#808080e2',
-      'blue':'#5F4DFF',
-      'tblue':'#1DA1F2',
-      'tyellow':'#FCF300'
-       }
-        'anti-ham' : {
-          'min' : '500px'
+        'anti-ham': {
+          'min': '531px'
         }
       }
     },
