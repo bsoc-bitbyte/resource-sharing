@@ -12,10 +12,11 @@ module.exports = withMT({
     extend: {
       screens: {
         mobile: {
-          max: '500px',
+          max: '531px',
         },
+
         'anti-mobile': {
-          min: '500px',
+          min: '531px',
           max: '640px',
         },
         'max-sm': {
@@ -33,8 +34,8 @@ module.exports = withMT({
         'max-2xl': {
           'max': '1536px'
         },
-        'anti-ham' : {
-          'min' : '500px'
+        'anti-ham': {
+          'min': '531px'
         }
       }
     },
