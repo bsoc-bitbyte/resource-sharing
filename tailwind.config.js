@@ -11,10 +11,12 @@ module.exports = withMT({
   theme: {
     extend: {
       screens: {
+        "mobile-sm": {
+          max: '400px',
+        },
         mobile: {
           max: '531px',
         },
-
         'anti-mobile': {
           min: '531px',
           max: '640px',
@@ -35,11 +37,22 @@ module.exports = withMT({
           'max': '1536px'
         },
         'anti-ham': {
-          'min': '531px'
-        }
+          'min': '500px'
+        },
+        'hero-section-sm': {
+          'max': '670px',
+        },
+        'hero-section': {
+          'min': '670px',
+          'max': '800px',
+        },
+        'hero-section-lg': {
+          'min': '800px',
+          'max': '960px',
+        },
       }
     },
   },
- 
+
   plugins: [],
 })
