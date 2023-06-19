@@ -10,7 +10,7 @@ function SignForm() {
       backgroundPosition: 'center',
       filter: 'blur(0px)'
     }}>
-      <div className="bg-white rounded-lg shadow-lg w-96 border-double border-4 border-sky-500 border-teal-100" >
+      <div className="bg-white rounded-lg shadow-lg w-96 border-double border-4 border-sky-500 border-teal-100 dark:bg-[#44403C]" >
         <div className="flex justify-between items-center text-center w-full pl-10 pr-10 pt-5 pb-1">
           <h1 className="text-2xl font-bold -m-4" style={{ fontFamily: 'monospace' }}>SignUp</h1>
 
