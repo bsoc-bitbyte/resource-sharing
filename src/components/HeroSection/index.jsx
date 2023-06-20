@@ -10,7 +10,7 @@ const HeroSection = () => {
         'h-[75vh] w-screen relative': true,
         'flex items-center justify-between overflow-hidden': true,
       })}>
-        <img src={"/blueBlob-cropped.png"} alt={"blueBlob"} className="mobile-sm:!scale-[1.5] hero-section-sm:block hidden absolute mobile:scale-[1.25] w-full rotate-[90deg] left-[1.25rem] z-0" />
+        <img src={"/blueBlob-cropped.webp"} alt={"blueBlob"} className="mobile-sm:!scale-[1.5] hero-section-sm:block hidden absolute mobile:scale-[1.25] w-full rotate-[90deg] left-[1.25rem] z-0" />
         {/* Text ... */}
         <section className={classNames({
           'w-1/2 h-full': true,
@@ -20,7 +20,7 @@ const HeroSection = () => {
           'hero-section:w-[46%]': true,
           'hero-section-sm:items-center hero-section-sm:pl-0' : true,
           "bg-no-repeat bg-[length:110vw_110vw] bg-center": true,
-          "hero-section-sm:bg-[url('/yellowBlob-cropped.png')]": true,
+          "hero-section-sm:bg-[url('/yellowBlob-cropped.webp')]": true,
           "mobile:bg-[length:120vw_120vw] mobile-sm:!bg-[length:145vw_145vw]": true,
         })}>
           {/* Title */}
@@ -67,7 +67,7 @@ const HeroSection = () => {
               className={"w-[85%] bg-transparent outline-none text-[#37474f] font-bold text-md capitalize"}
             />
             <img
-              src={"/cross 1.png"}
+              src={"/cross1.webp"}
               alt={"Clear Search"}
               className={"hero-section:h-4 h-6 cursor-pointer"}
               onClick={() => setSearchParam('')}
@@ -84,11 +84,11 @@ const HeroSection = () => {
           <div className={classNames({
             "bg-no-repeat bg-cover bg-left-top": true,
             "w-[55rem] h-[55rem]": true,
-            "bg-[url('/yellowBlob-cropped.png')]": true,
+            "bg-[url('/yellowBlob-cropped.webp')]": true,
             "flex items-center justify-end": true,
           })}>
             <img
-              src={"/fileSharing3.png"}
+              src={"/fileSharing3.webp"}
               alt={"File Sharing Illustration"}
               className={"hero-section:min-w-[21.5rem] w-[47.5vw]"}
             />

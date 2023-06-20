@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SignForm() {
   return (
     <div className=" h-screen flex items-center justify-center border-black pt-[11vh]" style={{
-      backgroundImage: 'url("/loginpage-background-image.jpeg")',
+      backgroundImage: 'url("/loginpage-background-image.webp")',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -15,7 +15,7 @@ function SignForm() {
           <h1 className="text-2xl font-bold -m-4" style={{ fontFamily: 'monospace' }}>SignUp</h1>
 
           <h2 className="flex items-center justify-end">
-            <img src="/iiitdmj-logo.jpg" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
+            <img src="/iiitdmj-logo.webp" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
             IIITDMJ
           </h2>
         </div>
