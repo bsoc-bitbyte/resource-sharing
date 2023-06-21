@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+    #preloader {
+      background: white url("public\Hourglass.gif") no-repeat center center;
+      background-size: 5%;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 999999;
+    }
+  </style>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/public/Favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UniShare</title>
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div id="preloader"></div>
    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   
-  </body>
+  </body >
 
+  <!-- <script>
+    var loader=document.getElementById("preloader")
+  
+    function myFunction() {
+       
+        preloader.style.display = "none";
+      }
+     </script> -->
+     <script>
+
+      var loader = document.getElementById("preloader");
+ 
+      function myFunction() {
+        setTimeout(() => {
+      preloader.style.display="none";
+    }, 4000); 
+        
+      }
+    </script>
 </html>
