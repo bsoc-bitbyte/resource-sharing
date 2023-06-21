@@ -58,7 +58,7 @@ const HeroSection = () => {
             "hero-section-sm:w-[25rem] hero-section-sm:rounded-lg": true,
             "mobile:!w-[90vw]": true,
           })}>
-            <img src={"/searchIcon.png"} alt={"Search"} className={"hero-section:h-6 h-8"} />
+            <img src={"/searchIcon.webp"} alt={"Search"} className={"hero-section:h-6 h-8"} />
             <input
               type={"text"}
               placeholder={"Search for Notes, Books, etc."}
