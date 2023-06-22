@@ -1,8 +1,4 @@
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
-import MaterialIntro from '../../components/cards/MaterialIntro'
-import MaterialCard from '../../components/cards/MaterialCard';
-import SearchBar from '../../components/SearchBar';
+import { NavBar, MaterialIntro, MaterialCard, SearchBar, Footer } from '../../components';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import cardData from '../../config/CardData.mjs';
@@ -38,10 +34,11 @@ const MaterialsPage = () => {
     
       return (
         <>
+          <div className="h-[15vh]" />
           <NavBar />
           <MaterialIntro image={categoryimage} length={materials.length} category={cardData[categoryid-1].domain}/>
           <SearchBar />
-          {materials.map((material) =>
+          {materials.slice(0,5).map((material) =>
           (
             <MaterialCard material={material} key={material.id}/>
           ))}
