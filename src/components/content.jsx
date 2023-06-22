@@ -1,39 +1,18 @@
-<<<<<<< HEAD:src/components/content.jsx
 import CardData from '../config/CardData.mjs';
 import CategoryCards from './cards/CategoryCards.jsx';
 import underline from '../assets/underline .svg'
-=======
-import CardData from '../../config/CardData.mjs';
-import { CategoryCards } from '../../components';
-import classNames from 'classnames';
-import underline from '/underline .svg';
->>>>>>> 65b524c1fb83e8c57a71e7becaebe9c1049cdb06:src/pages/LandingPage/content.jsx
 
 const Content = () => {
+  const card = CardData.map((value) => {
+    return <CategoryCards key={value.id} card={value} />;
+  });
   return (
-    <div className={classNames({
-      "w-screen h-fit": true,
-      "flex flex-col items-center justify-center gap-2": true,
-    })}>
-      <span className={classNames({
-        "w-screen h-fit": true,
-        "flex flex-col items-center justify-center gap-2 mb-10": true,
-      })}>
-        <p className={classNames({
-          "text-4xl md:text-5xl": true,
-          "tracking-[-0.3rem]": true,
-          "comfort text-[#0f172A]": true,
-          "dark:text-white": true,
-        })}>
-          Choose Your Topic !
-        </p>
-        <img className="w-[95vw] sm:w-[35rem]" src={underline} alt="underline" />
-      </span>
-      <div className="flex flex-wrap justify-center items-center gap-8 w-[75vw] anti-mobile:w-[95vw] mobile:w-[95vw]">
-        {CardData.map((value) => {
-          return <CategoryCards key={value.id} card={value} />;
-        })}
-      </div>
+    <div className="text-center">
+      <p className="comfort pl-4 pr-4  m-0 text-[50px] tracking-[-0.4rem] leading-[60px] md:text-[4rem] 2xl:text-[5.3rem] 2xl:leading-[6.25rem] 2xl:tracking-[-0.5rem]  text-[#0f172A] ">
+        Choose Your Topic !
+      </p>
+      <img className="pl-4 pr-4 mx-auto mb-[4rem] " src={underline} alt="underline" />
+      <div className=" flex flex-wrap justify-center ">{card}</div>
     </div>
   );
 };
