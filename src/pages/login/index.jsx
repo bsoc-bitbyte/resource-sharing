@@ -1,12 +1,13 @@
 
 import React from 'react'
-import LoginPage from './contentLogin'
-import NavBar from '../../components/NavBar'
+import LoginPage from './content'
+import { NavBar } from '../../components'
+
 const Login  = () => {
   return (
     <>
-    <NavBar />
-    <LoginPage/>
+      <NavBar />
+      <LoginPage/>
     </>
   )
 }

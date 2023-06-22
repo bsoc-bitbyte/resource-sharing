@@ -1,17 +1,16 @@
-import NavBar from '../../components/NavBar';
-import HeroSection from '../../components/HeroSection';
-import Content from '../../components/content';
-import Footer from '../../components/Footer';
+import { NavBar, HeroSection, Footer } from '../../components';
+import Content from './content';
+
 
 
 const LandingPage = () => {
   return (
-    <>
+    <div className={'flex flex-col items-start justify-center gap-20'}>
       <NavBar />
       <HeroSection />
       <Content />
       <Footer />
-    </>
+    </div>
   );
 };
 

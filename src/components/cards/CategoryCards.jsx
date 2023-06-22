@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
 const CategoryCards = (props) => {
   return (
-    <div className="w-72 h-72 sm:w-[21rem] sm:h-[21rem] 2xl:w-[24.4rem] 2xl:h-[24.4rem] lg:w-[22.5rem] lg:h-[22.5rem] bg-[#f1f5f9] shadow-[0_7.33px_16.67px_rgba(0,0,0,0.25)] rounded-[44px] overflow-hidden m-6 flex justify-center relative">
+    <div className={classNames({
+      "w-50 h-50 w-60 h-60 lg:w-72 lg:h-72": true,
+      "overflow-hidden relative cursor-pointer": true,
+      "bg-[#f1f5f9] shadow-[0px_7.33333px_16.6667px_rgba(0,0,0,0.25)] rounded-[3rem]": true,
+      "flex justify-center items-center": true,
+      "dark:bg-[#E7E5E4] dark:!shadow-[0px_2px_24.6667px_rgba(168,162,158,0.75)]": true,
+      "anti-mobile:rounded-[2rem]": true,
+    })}>
     <Link to={props.card.link}>
-      <img className="opacity-[0.23] absolute left-[97px] top-[110px]" src={`src/assets/${props.card.image}`} />
-      <div className="flex items-center">
-        <p className="text-3xl sm:text-[2rem]  lg:text-4xl  monu text-[#37474F] shadow-[5px 4px 4px rgba(0, 0, 0, 0.25)] font-normal  ">
+      <img className="opacity-[0.23] absolute left-[75px] top-[75px] anti-mobile:top-[35px] anti-mobile:left-[50px] mobile:top-[35px] mobile:left-[50px]" src={`/${props.card.image}`} />
+      <div className="flex items-center justify-center relative w-full h-full">
+        <p className={classNames({
+          "monu text-2xl text-[#37474F] font-normal text-center text-shadow": true,
+        })}>
           {props.card.domain}
         </p>
       </div>
