@@ -62,3 +62,12 @@ li {
 .text-shadow {
   text-shadow: 3.33333px 2.66667px 2.66667px rgba(0, 0, 0, 0.25);
 }
+
+.preloader {
+  background: white url('/public/hourglass.gif') no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
