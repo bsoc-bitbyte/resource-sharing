@@ -4,6 +4,8 @@ import LandingPage from './pages/LandingPage';
 import MaterialsPage from './pages/MaterialsPage';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import Layout from './pages/OverviewPage';
+
 const App = () => {
   return (
     <>
@@ -13,7 +15,8 @@ const App = () => {
           <Route path="/materials/:category" element={<MaterialsPage />} />
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
-        </Routes>
+          <Route path="/details" element={<Layout/>}></Route>
+          </Routes>
       </BrowserRouter>
     </>
   )

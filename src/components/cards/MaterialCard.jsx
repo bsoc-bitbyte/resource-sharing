@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const MaterialCard = (props) => {
   let key=0;
@@ -28,9 +29,11 @@ const MaterialCard = (props) => {
             <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Download
             </button>
+            <Link to="/details">
             <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Preview
             </button>
+            </Link>
           </div>
         </div>
       </div>
