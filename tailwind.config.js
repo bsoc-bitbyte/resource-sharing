@@ -14,7 +14,7 @@ module.exports = {
           max: '400px',
         },
         mobile: {
-          max: '531px',
+          max: '470px',
         },
         'anti-mobile': {
           min: '531px',

@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div className={classNames({
       'w-screen h-fit': true,
-      'fixed top-2 z-[10000] ': true,
+      'fixed top-0 z-[10000] ': true,
       'flex justify-center items-center': true,
     })}>
       <div className={classNames({
