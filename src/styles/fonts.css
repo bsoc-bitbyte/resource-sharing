@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: Monument;
-    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Regular.otf) format('opentype');
+    src: url(../assets/fonts/MonumentExtended-Regular.otf) format('opentype'), url(../assets/fonts/MonumentExtended-Regular.otf) format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: block
@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: Monument;
-    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Regular.otf) format('opentype');
+    src: url(../assets/fonts/MonumentExtended-Regular.otf) format('opentype'), url(../assets/fonts/MonumentExtended-Regular.otf) format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: block
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: Monument;
-    src: url(../fonts/MonumentExtended-Regular.otf) format('opentype'), url(../fonts/MonumentExtended-Ultrabold.otf) format('opentype');
+    src: url(../assets/fonts/MonumentExtended-Regular.otf) format('opentype'), url(../assets/fonts/MonumentExtended-Ultrabold.otf) format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: block

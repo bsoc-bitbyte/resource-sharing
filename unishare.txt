@@ -1,0 +1,8 @@
+landing page
+listing pages
+blogs
+authentication 
+user schema - userid, username, email, password, provider, created at, profile pic, uploaded_resources_id
+uploaded_resources_id - title, desc, 
+
+vercel_token = JrxahfgIN1NEgjSRA3UxXw81
