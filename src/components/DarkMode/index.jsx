@@ -5,7 +5,7 @@ import classNames from "classnames";
 let prefersDark = false
 
 const DarkMode = () => {
-  const [theme, setTheme] = React.useState('light')
+  const [theme, setTheme] = React.useState(document.documentElement.getAttribute("data-theme"))
 
   const setDark = () => {
     document.documentElement.setAttribute("data-theme", "dark")
