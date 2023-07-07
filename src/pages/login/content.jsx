@@ -27,7 +27,7 @@ function LoginForm() {
   }
   return (
     <div className=" h-screen flex items-center justify-center border-black pt-[10vh]" style={{
-      backgroundImage: 'url("/loginpage-background-image.jpeg")',
+      backgroundImage: 'url("/loginpage-background-image.webp")',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -38,9 +38,10 @@ function LoginForm() {
           <h1 className="text-2xl font-bold dark:text-[#1A1A1C]" style={{ fontFamily: 'monospace' }}>Login</h1>
 
           <h2 className="flex items-center justify-end dark:text-[#1A1A1C]">
-            <img src="/iiitdmj-logo.jpg" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
+            <img src="/iiitdmj-logo.webp" alt="pr-0 w-6 h-6" className="pr-0 w-8 h-8 iiitdmj-logo mx-1" />
             IIITDMJ
           </h2>
+
         </div>
         <hr className=' ' />
         <form className="px-6 py-4">
