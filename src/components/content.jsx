@@ -1,6 +1,6 @@
 import CardData from '../config/CardData.mjs';
-import CategoryCards from './cards/CategoryCards.jsx';
-import underline from '../assets/underline .svg'
+import CategoryCards from './cards/CategoryCards';
+import underline from '../../public/underline .svg'
 
 const Content = () => {
   const card = CardData.map((value) => {
