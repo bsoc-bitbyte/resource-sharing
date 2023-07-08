@@ -76,8 +76,8 @@ function SignForm() {
           <div className={`my-3 text-center text-base bg-red-500 text-white rounded-lg p-1 text-gray-600 ${(errorr)? 'visible' : 'hidden'}`}>
               {(errorr) ? errorr : null}
             </div>
-          <div className={`my-3 text-center text-base bg-red-500 text-white rounded-lg p-1 text-gray-600 ${(error)? 'visible' : 'hidden'}`}>
-              {(error) ? error.message : null}
+          <div className={`my-3 text-center text-base bg-red-500 text-white rounded-lg p-1 text-gray-600 capitalize ${(error)? 'visible' : 'hidden'}`}>
+              {(error) ? error.message.replaceAll('Firebase: Error (auth/', '').replaceAll(').', '').replaceAll('-', ' ') : null}
             </div>
           <div className="mb-6">
             <label className="text-gray-500">Name</label>
