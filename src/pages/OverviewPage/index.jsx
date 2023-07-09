@@ -8,7 +8,6 @@ const Layout  = () => {
     <>
       <NavBar />
       < DetailsPage/>
-      < DetailsPage/>
     </>
   )
 }
