@@ -47,7 +47,7 @@ function LoginForm() {
       backgroundPosition: 'center',
       filter: 'blur(0px)'
     }}>
-      <div className="bg-white rounded-lg shadow-lg w-96 border-double border-4 border-sky-500 border-teal-100" >
+      <div className="bg-white rounded-lg shadow-lg w-96 border-double border-4 border-sky-500" >
         <div className="flex justify-between items-center text-center w-full pl-10 pr-10 pt-5 pb-1">
           <h1 className="text-2xl font-bold dark:text-[#1A1A1C]" style={{ fontFamily: 'monospace' }}>Login</h1>
 
@@ -59,7 +59,7 @@ function LoginForm() {
         </div>
         <hr className=' ' />
         <form className="px-6 py-4">
-        <div className={`my-3 text-center text-base bg-red-500 text-white rounded-lg p-1 text-gray-600 capitalize ${(error)? 'visible' : 'hidden'}`}>
+        <div className={`my-3 text-center text-base bg-red-500 text-white rounded-lg p-1 capitalize ${(error)? 'visible' : 'hidden'}`}>
               {(error) ? error.message.replaceAll('Firebase: Error (auth/', '').replaceAll(').', '').replaceAll('-', ' ') : null}
             </div>
           <div className="mb-6">
@@ -76,16 +76,24 @@ function LoginForm() {
             </div>
             <div className="checkb1">
               <input type="checkbox" id="remember" className="form-checkbox" onChange={(e) => {setRememberMe(e.target.checked);}}/>
-              <label htmlFor="remember" className="ml-2 text-sm text-gray-600">Remember Me</label>
+              <label htmlhtmlFor="remember" className="ml-2 text-sm text-gray-600">Remember Me</label>
             </div>
           </div>
-          <input type="submit" value="Login" className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg cursor-pointer hover:bg-blue-600" onClick={(e) => {
-            e.preventDefault();
-            setErrorcause('');
-            signInWithEmailAndPassword(emailid, password);}}/>
-          <div className={`flex items-center justify-center h-10 ${(loading || loading) ? 'visible' : 'hidden'}`}>
-            <img src="/ecllipseloading.svg" alt="" className='bg-white h-full' />
-          </div>
+          {loading ? 
+            <div className={`flex items-center justify-center h-10`}>
+              <img src="/loader.gif" alt="" className='bg-white h-full' />
+            </div> : 
+            <input 
+              type="submit" 
+              value="Login" 
+              className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg cursor-pointer hover:bg-blue-600" 
+              onClick={(e) => {
+                e.preventDefault();
+                setErrorcause('');
+                signInWithEmailAndPassword(emailid, password)
+              }}
+            />
+          }
           <div className="mt-6 text-center text-base text-gray-600">
             Not a member? <a href="#" className="text-blue-500 hover:underline"><Link to="/signup">Signup</Link></a>
           </div>

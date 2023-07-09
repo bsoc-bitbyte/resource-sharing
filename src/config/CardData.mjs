@@ -3,7 +3,7 @@ const cardData = [
     id: 1,
     image: 'education.webp',
     domain: 'Academics',
-    link: './materials/academics',
+    link: '/materials/academics',
     urlparams: 'academics',
     background: 'BackgroundImage.webp',
     fetchlink: 'https://64870876beba6297278fb836.mockapi.io/materials'
@@ -12,7 +12,7 @@ const cardData = [
     id: 2,
     image: 'test.webp',
     domain: 'Competitive Exams',
-    link: './materials/competitive-exam',
+    link: '/materials/competitive-exam',
     urlparams: 'competitive-exam',
     background: 'BackgroundImage.webp',
     fetchlink: 'https://64870876beba6297278fb836.mockapi.io/materials'
@@ -21,7 +21,7 @@ const cardData = [
     id: 3,
     image: 'data-structure.webp',
     domain: 'CP/DSA',
-    link: './materials/cp-dsa',
+    link: '/materials/cp-dsa',
     urlparams: 'cp-dsa',
     background: 'BackgroundImage.webp',
     fetchlink: 'https://64870876beba6297278fb836.mockapi.io/materials'
@@ -30,7 +30,7 @@ const cardData = [
     id: 4,
     image: 'coding.webp',
     domain: 'Development',
-    link: './materials/development',
+    link: '/materials/development',
     urlparams: 'development',
     background: 'BackgroundImage.webp',
     fetchlink: 'https://64870876beba6297278fb836.mockapi.io/materials'
@@ -39,7 +39,7 @@ const cardData = [
     id: 5,
     image: 'interview.webp',
     domain: 'Interview / Placement',
-    link: './materials/interview-placement',
+    link: '/materials/interview-placement',
     urlparams: 'interview-placement',
     background: 'BackgroundImage.webp',
     fetchlink: 'https://64870876beba6297278fb836.mockapi.io/materials'
