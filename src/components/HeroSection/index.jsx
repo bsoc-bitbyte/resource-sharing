@@ -11,7 +11,7 @@ const HeroSection = () => {
         'flex items-center justify-between overflow-hidden': true,
       })}>
 
-        <img src={"https://images.pexels.com/photos/6077089/pexels-photo-6077089.jpeg"} alt={"blueBlob"} className="mobile-sm:!scale-[1.5] hero-section-sm:block hidden absolute mobile:scale-[1.25] w-full rotate-[0deg] left-[0rem] z-0" />
+        <img src={"https://images.pexels.com/photos/6077089/pexels-photo-6077089.jpeg"} alt={"Book Heaven"} className="mobile-sm:!scale-[1.5] hero-section-sm:block hidden absolute mobile:scale-[1.25] w-full rotate-[0deg] left-[0rem] z-0" />
         <img src={"/blueBlob-cropped.webp"} alt={"blueBlob"} className="mobile-sm:!scale-[1.5] hero-section-sm:block hidden absolute mobile:scale-[1.25] w-full rotate-[90deg] left-[1.25rem] z-0" />
         {/* Text ... */}
         <section className={classNames({
