@@ -40,7 +40,7 @@ const MaterialsPage = () => {
           <SearchBar />
           {materials.slice(0,5).map((material) =>
           (
-            <MaterialCard material={material} key={material.id}/>
+            <MaterialCard material={material} key={material.id} id={material.id} />
           ))}
           <Footer />
         </>

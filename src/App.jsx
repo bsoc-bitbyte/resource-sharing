@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/materials/:category" element={<MaterialsPage />} />
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
-          <Route path="/pdfviewer" element={<PDFViewer/>}></Route>
+          <Route path="/pdfviewer/:id" element={<PDFViewer/>}></Route>
           <Route path="/resetpassword" element={<Reset/>}></Route>
         </Routes>
       </BrowserRouter>
