@@ -1,5 +1,5 @@
-import CardData from '../../config/CardData.mjs';
-import { CategoryCards } from '../../components';
+import CardData from '../config/CardData.mjs';
+import { CategoryCards } from '../components';
 import classNames from 'classnames';
 import underline from '/underline .svg';
 
@@ -32,4 +32,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Content;  

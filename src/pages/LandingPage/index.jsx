@@ -1,5 +1,5 @@
 import { NavBar, HeroSection, Footer } from '../../components';
-import Content from './content';
+import Content from '../../components/content';
 
 const LandingPage = () => {
   return (

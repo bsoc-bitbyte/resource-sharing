@@ -1,8 +1,11 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import { Link } from 'react-router-dom'
+>>>>>>> 9518b5d15e01eef4b94fd0e3caf93bb9253f53de
 
 const MaterialCard = (props) => {
-  let key=0;
   return (
     <div className='flex items-center justify-center flex-col'>
      <div className='w-[90vw] bg-[#f1f5f9] dark:bg-[#E7E5E4] flex items-center justify-center m-5 shadow-[2px_4px_8px_rgba(0,0,0,0.25)] rounded-2xl max-md:flex-col px-3'>
@@ -19,20 +22,27 @@ const MaterialCard = (props) => {
               </div>
           </div>
           <div className='flex items-center justify-left w-full flex-wrap'>
-            {props.material.fields.map((item) => (
-              <div className='bg-black/[0.68] m-1 px-5 py-1 text-sm rounded-2xl text-white' key={++key}>
+            {props.material.fields.map((item, index) => (
+              <div className='bg-black/[0.68] m-1 px-5 py-1 text-sm rounded-2xl text-white' key={index}>
                 {item}
               </div> 
             ))}
           </div>
           <div className='flex items-end justify-end w-full h-28'>
-            <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
+            <button className='theme-btn-shadow m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Download
             </button>
+<<<<<<< HEAD
             <Link to="/details?search=query">
             <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Preview
             </button>
+=======
+            <Link to={`/pdfviewer/${props.id}`}>
+              <button className='theme-btn-shadow m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
+                Details
+              </button>
+>>>>>>> 9518b5d15e01eef4b94fd0e3caf93bb9253f53de
             </Link>
           </div>
         </div>
