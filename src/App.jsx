@@ -4,6 +4,8 @@ import LandingPage from './pages/LandingPage';
 import MaterialsPage from './pages/MaterialsPage';
 import Login from './pages/login';
 import Signup from './pages/signup';
+import PDFViewer from './components/PDFViewer';
+import Reset from './pages/forgotpassword'
 const App = () => {
   return (
     <>
@@ -13,6 +15,8 @@ const App = () => {
           <Route path="/materials/:category" element={<MaterialsPage />} />
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
+          <Route path="/pdfviewer" element={<PDFViewer/>}></Route>
+          <Route path="/resetpassword" element={<Reset/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

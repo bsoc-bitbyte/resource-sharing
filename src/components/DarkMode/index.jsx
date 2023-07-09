@@ -5,7 +5,7 @@ import classNames from "classnames";
 let prefersDark = false
 
 const DarkMode = () => {
-  const [theme, setTheme] = React.useState('light')
+  const [theme, setTheme] = React.useState(document.documentElement.getAttribute("data-theme"))
 
   const setDark = () => {
     document.documentElement.setAttribute("data-theme", "dark")
@@ -49,7 +49,7 @@ const DarkMode = () => {
       }}
     >
       <img 
-        src={`${(theme === 'light') ? '/dark-mode.png' : '/moon.png'}`} 
+        src={`${(theme === 'light') ? '/dark-mode.webp' : '/moon.webp'}`} 
         alt={"switch"}
         className={classNames({
           "w-7 h-7": true,
