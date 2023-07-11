@@ -59,7 +59,7 @@ const NavBar = () => {
               'hidden' : (user) ? true: false,
             })}
           >
-            <Link to='/Dashboard'>Dashboard</Link>
+            <Link to='/Dashboard'>UserName</Link>
           </button>
           <button
             className={classNames({

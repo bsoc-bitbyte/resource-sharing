@@ -2,16 +2,15 @@ import React from 'react'
 import NavBar from '../NavBar'
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { doc } from 'firebase/firestore';
-
 
 const Dashboard = () => {
+  const [open, setOpen] = useState(true);
     return (
       <div className="main w-screen h-screen my-4 py-4 bg-gray-100">
         <NavBar />
           <div className='flex justify-center'>
-            <div id='sidePanel' className="side_panel bg-gray-200 fixed top-20 left-4 h-[calc(100vh-2rem)] w-full max-w-[14rem] rounded-md p-4 shadow-xl shadow-blue-gray-900/5">
-              <button id='toggleOffBtn' onClick={(e) => ToggleOff() } className='toggleSidepanel text-right mt-1  text-2xl font-bold'> x </button>
+            <div id='sidePanel' className={`side_panel bg-gray-200 fixed top-20 left-4 h-[calc(100vh-2rem)] w-full max-w-[14rem] rounded-md p-4 shadow-xl shadow-blue-gray-900/5`}>
+              <button id='toggleOffBtn' onClick={(e) => setOpen(!open)} className='toggleSidepanel text-right mt-1  text-2xl font-bold'> x </button>
               <div className="mb-2 p-4">
                 <img class="w-full h-2/5" src="public\yellowBlob-cropped.webp">
                 </img>
