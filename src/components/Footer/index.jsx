@@ -19,7 +19,7 @@ const Footer = () => {
   let borderColor = "#87CEFA";
   let centerColor = "#B9D9EB";
   return (
-    <footer 
+    <footer
       className={classNames({
         "bg-[#E2E8F0] dark:bg-[#E7E5E4]": true,
         "w-screen min-h-[50vh] py-14": true,
@@ -29,78 +29,46 @@ const Footer = () => {
         background: `linear-gradient(90deg, ${borderColor} 0%, ${centerColor} 20%, ${centerColor} 80%, ${borderColor} 100%)`
       }}
     >
-        <div className="flex flex-col items-center justify-center w-[95vw] gap-6 relative">
-          <strong
-            className="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
-          >
-            Want us to email you with the latest uploads?
-          </strong>
 
-          <form className="w-screen grid place-items-center">
-            <div className="relative w-[95vw] sm:w-[27.75rem]">
-              <label className="sr-only" htmlFor="email"> Email </label>
+      <div className="relative h-fit w-screen flex flex-col items-center justify-center">
+        <div className="w-[95vw] sm:w-[35rem]">
+          <p className="comfort text-center text-gray-800 font-bold mobile:text-sm">
+            Unishare is a college resource sharing website designed to serve as a dynamic platform for students to collaborate and share resources. Unishare aims to foster an environment where students can easily access and exchange a wide range of educational materials, such as lecture notes, study guides, past exam papers, and more.
+          </p>
 
-              <input
-                className="w-full rounded-full border-gray-200 bg-gray-100 p-4 text-sm font-medium"
-                id="email"
-                type="email"
-                placeholder="john@doe.com"
-              />
-
-              <button
-                className={classNames({
-                  "px-5 py-3": true,
-                  "rounded-full bg-[#3B82F6]": true,
-                  "text-sm font-medium text-white": true,
-                  "absolute end-1 top-1/2 -translate-y-1/2": true,
-                  "transition hover:bg-blue-700": true,
-                })}
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className="relative h-fit w-screen flex flex-col items-center justify-center">
-          <div className="w-[95vw] sm:w-[35rem]">
-            <p className="comfort text-center text-gray-800 font-bold mobile:text-sm">
-              Unishare is a college resource sharing website designed to serve as a dynamic platform for students to collaborate and share resources. Unishare aims to foster an environment where students can easily access and exchange a wide range of educational materials, such as lecture notes, study guides, past exam papers, and more.
-            </p>
-
-            <div className="mt-6 pl-5 w-full flex items-center justify-center gap-4 scale-[0.75]">
-              {socials.map((social, index) => {
-                return (
-                  <a
-                    key={index}
-                    className={classNames({
-                      "bg-gray-900 px-4 py-1 rounded-[5rem]": true,
-                      "flex items-center justify-center gap-0": true,
-                      "text-gray-900 transition hover:text-gray-700": true,
-                    })}
-                    href={social.link}
-                    target="_blank"
-                    rel="noreferrer"
+          <div className="mt-6 pl-5 w-full flex items-center justify-center gap-4 scale-[0.75]">
+            {socials.map((social, index) => {
+              return (
+                <a
+                  key={index}
+                  className={classNames({
+                    "bg-gray-900 px-4 py-1 rounded-[5rem]": true,
+                    "flex items-center justify-center gap-0": true,
+                    "text-gray-900 transition hover:text-gray-700": true,
+                  })}
+                  href={social.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    className="h-12 w-12 invert text-black translate-y-[0.4rem] translate-x-1"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
-                    <svg
-                      className="h-12 w-12 invert text-black translate-y-[0.4rem] translate-x-1"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d={social.svgPath}
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-[#E2E8F0] font-bold -translate-x-1">{social.name}</span>
-                  </a>
-                )
-              })}
-            </div>
+                    <path
+                      fillRule="evenodd"
+                      d={social.svgPath}
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-[#E2E8F0] font-bold -translate-x-1">{social.name}</span>
+                </a>
+              )
+            })}
           </div>
         </div>
+      </div>
     </footer>
   );
 }
