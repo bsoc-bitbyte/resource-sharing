@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import SearchBar from "./SearchBar";
+import Dashboard from "./Dashboard";
 import { CategoryCards, MaterialCard, MaterialIntro } from "./Cards";
 
 export {
@@ -9,6 +10,7 @@ export {
     Footer,
     HeroSection,
     SearchBar,
+    Dashboard,
     CategoryCards,
     MaterialCard,
     MaterialIntro

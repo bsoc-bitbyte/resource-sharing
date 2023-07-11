@@ -6,6 +6,7 @@ import Login from './pages/login';
 import Signup from './pages/signup';
 import PDFViewer from './components/PDFViewer';
 import Reset from './pages/forgotpassword'
+import Dashboard from './components/Dashboard';
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/signup" element={<Signup/>}></Route>
           <Route path="/pdfviewer/:id" element={<PDFViewer/>}></Route>
           <Route path="/resetpassword" element={<Reset/>}></Route>
+          <Route path="/dashboard" element={<Dashboard/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
