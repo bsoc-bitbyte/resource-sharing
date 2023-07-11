@@ -49,7 +49,7 @@ const DarkMode = () => {
       }}
     >
       <img 
-        src={`${(theme === 'light') ? '/dark-mode.png' : '/moon.png'}`} 
+        src={`${(theme === 'light') ? '/dark-mode.webp' : '/moon.webp'}`} 
         alt={"switch"}
         className={classNames({
           "w-7 h-7": true,

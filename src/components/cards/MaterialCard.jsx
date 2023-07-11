@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MaterialCard = (props) => {
   let key=0;
@@ -18,19 +19,21 @@ const MaterialCard = (props) => {
               </div>
           </div>
           <div className='flex items-center justify-left w-full flex-wrap'>
-            {props.material.fields.map((item) => (
-              <div className='bg-black/[0.68] m-1 px-5 py-1 text-sm rounded-2xl text-white' key={++key}>
+          {props.material.fields.map((item, index) => (
+              <div className='bg-black/[0.68] m-1 px-5 py-1 text-sm rounded-2xl text-white' key={index}>
                 {item}
               </div> 
             ))}
           </div>
           <div className='flex items-end justify-end w-full h-28'>
-            <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
+          <button className='theme-btn-shadow m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
               Download
             </button>
-            <button className='m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
-              Preview
-            </button>
+            <Link to={`/details/${props.id}`}>
+            <button className='theme-btn-shadow m-2 px-5 py-2 bg-[#3B82F6] shadow-[0px_4px_11.3333px_rgba(0,0,0,0.25)] text-white rounded-lg'>
+                Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>

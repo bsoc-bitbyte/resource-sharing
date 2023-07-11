@@ -2,12 +2,16 @@ import React from 'react'
 import classNames from 'classnames';
 import { Link } from "react-router-dom";
 import DarkMode from '../DarkMode';
+import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
+import { auth } from '../../../Firebase/ClientApp.mjs';
 
 const NavBar = () => {
+  const [user, loading, error] = useAuthState(auth);
+  const [signout, loadingg, erorr] = useSignOut(auth);
   return (
     <div className={classNames({
       'w-screen h-fit': true,
-      'fixed top-2 z-[10000] ': true,
+      'fixed top-0 z-[10000] ': true,
       'flex justify-center items-center': true,
     })}>
       <div className={classNames({
@@ -41,9 +45,22 @@ const NavBar = () => {
               'px-4 py-2': true,
               'monu text-sm text-white font-normal': true,
               'mobile:text-xs': true,
+              'hidden' : (user) ? true: false,
             })}
           >
             <Link to='/login'>Login</Link>
+          </button>
+          <button
+            className={classNames({
+              'theme-btn-shadow rounded-xl bg-[#3B82F6]': true,
+              'px-4 py-2': true,
+              'monu text-sm text-white font-normal': true,
+              'mobile:text-xs': true,
+              'hidden' : (user) ? false: true,
+            })}
+            onClick={() => signout()}
+          >
+            Logout
           </button>
           <DarkMode />
         </div>
