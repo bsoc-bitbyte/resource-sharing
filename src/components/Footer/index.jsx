@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import DarkMode from '../DarkMode';
 
 const socials = [
   {
@@ -15,28 +16,25 @@ const socials = [
   },
 ]
 
+
 const Footer = () => {
   let borderColor = "#87CEFA";
   let centerColor = "#B9D9EB";
+  
   return (
-    <footer 
-      className={classNames({
-        "bg-[#E2E8F0] dark:bg-[#E7E5E4]": true,
-        "w-screen min-h-[50vh] py-14": true,
-        "flex flex-col items-center justify-center gap-6": true,
-      })}
-      style={{
-        background: `linear-gradient(90deg, ${borderColor} 0%, ${centerColor} 20%, ${centerColor} 80%, ${borderColor} 100%)`
-      }}
-    >
-        <div className="flex flex-col items-center justify-center w-[95vw] gap-6 relative">
+    <div>
+      <footer
+        className={`w-screen min-h-[50vh] py-14 flex flex-col items-center justify-center gap-6 dark:bg-[#44403C] dark:text-white bg-[#B9D9EB]`}
+      >
+
+        <div className="flex flex-col items-center justify-center w-[95vw] gap-6 relative dark:bg-[#44403C]  dark:text-white">
           <strong
-            className="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
+            className="block text-center text-xl font-bold text-gray-900 sm:text-3xl  dark:text-white"
           >
             Want us to email you with the latest uploads?
           </strong>
 
-          <form className="w-screen grid place-items-center">
+          <form className="w-screen grid place-items-center dark:bg-[#44403C] dark:text-white">
             <div className="relative w-[95vw] sm:w-[27.75rem]">
               <label className="sr-only" htmlFor="email"> Email </label>
 
@@ -62,9 +60,9 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="relative h-fit w-screen flex flex-col items-center justify-center">
-          <div className="w-[95vw] sm:w-[35rem]">
-            <p className="comfort text-center text-gray-800 font-bold mobile:text-sm">
+        <div className="relative h-fit w-screen flex flex-col items-center justify-center dark:bg-[#44403C] dark:text-white">
+          <div className="w-[95vw] sm:w-[35rem] dark:bg-[#44403C] dark:text-white">
+            <p className="comfort text-center text-gray-800 font-bold mobile:text-sm dark:bg-[#44403C] dark:text-white">
               Unishare is a college resource sharing website designed to serve as a dynamic platform for students to collaborate and share resources. Unishare aims to foster an environment where students can easily access and exchange a wide range of educational materials, such as lecture notes, study guides, past exam papers, and more.
             </p>
 
@@ -101,8 +99,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-    </footer>
+      </footer>
+    </div>
   );
 }
-
 export default Footer;
+
+// const MyComponent = ({ borderColor, centerColor }) => {
+//   const gradientClasses = `bg-gradient-to-r from-${borderColor} to-${centerColor}`;
+
+//   return <div className={gradientClasses}></div>;
+// };
+// export default MyComponent;
