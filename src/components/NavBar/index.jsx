@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import DarkMode from '../DarkMode';
 import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
 import { auth } from '../../../Firebase/ClientApp.mjs';
+import unishare_icon from '../../../public/Favicon.webp';
 
 const NavBar = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -30,6 +31,10 @@ const NavBar = () => {
           'dark:text-white': true,
           'mobile:text-lg': true,
         })}>
+          <img 
+          src = {unishare_icon}
+          alt = 'unishare_icon'
+          style={{width: '20px', height: 'auto'}}/>
           <Link to='/'>UniShare</Link>
         </div>
 
