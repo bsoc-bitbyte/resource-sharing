@@ -37,7 +37,7 @@ export default function PDFViewer(){
                     'flex justify-center w-full': true,
                 })}>
                     <div className={classNames({
-                        'h-[540px] w-screen mt-20 scale-[0.96]': true,
+                        'h-[87vh] w-screen mt-20 scale-[0.96]': true,
                     })}>
                         <Viewer
                             fileUrl={pdfFile}
