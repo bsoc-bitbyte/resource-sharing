@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import React from 'react';
-import DarkMode from '../DarkMode';
 
 const socials = [
   {
@@ -18,8 +17,6 @@ const socials = [
 
 
 const Footer = () => {
-  let borderColor = "#87CEFA";
-  let centerColor = "#B9D9EB";
   
   return (
     <div>
@@ -104,10 +101,3 @@ const Footer = () => {
   );
 }
 export default Footer;
-
-// const MyComponent = ({ borderColor, centerColor }) => {
-//   const gradientClasses = `bg-gradient-to-r from-${borderColor} to-${centerColor}`;
-
-//   return <div className={gradientClasses}></div>;
-// };
-// export default MyComponent;
