@@ -6,9 +6,6 @@ const PageNoteFound = () => {
 
     return (
         <body className='bg-[#ffffff] font-medium'>
-            {/* <div className="text-2xl py-4 px-4 font-black">
-                <h2>404 NOT FOUND</h2>
-            </div> */}
             <div className="mt-12">
                 <div className="text-center tracking-wide">
                     <p className='text-4xl my-8 font-bold'>Uh-Oh...</p>
