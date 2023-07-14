@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import SearchBar from "./SearchBar";
 import Dashboard from "./Dashboard";
-import { CategoryCards, MaterialCard, MaterialIntro } from "./Cards";
+import { CategoryCards, MaterialCard, MaterialIntro } from "./cards";
 
 export {
     NavBar,
