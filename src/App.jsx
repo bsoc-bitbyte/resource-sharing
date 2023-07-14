@@ -9,6 +9,7 @@ import PageNoteFound from './pages/404page'
 
 import PDFViewer from './components/PDFViewer';
 import Reset from './pages/forgotpassword'
+import Dashboard from './components/Dashboard';
 const App = () => {
   return (
     <>
@@ -21,7 +22,9 @@ const App = () => {
           <Route path="/details" element={<Layout/>}></Route>
           <Route path="/pdfviewer/:id" element={<PDFViewer/>}></Route>
           <Route path="/resetpassword" element={<Reset/>}></Route>
+          <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="*" element={<PageNoteFound/>}></Route>
+
         </Routes>
       </BrowserRouter>
     </>
