@@ -4,7 +4,7 @@ import classNames from "classnames";
 const CategoryCards = (props) => {
   return (
     <div className={classNames({
-      "w-50 h-50 w-60 h-60 lg:w-72 lg:h-72": true,
+      " w-60 h-60 lg:w-72 lg:h-72": true,
       "overflow-hidden relative cursor-pointer": true,
       "bg-[#f1f5f9] shadow-[0px_7.33333px_16.6667px_rgba(0,0,0,0.25)] rounded-[3rem]": true,
       "flex justify-center items-center": true,
