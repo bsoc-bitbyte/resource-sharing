@@ -1,4 +1,4 @@
-import { NavBar, MaterialIntro, MaterialCard, SearchBar, Footer } from '../../components';
+import { NavBar, MaterialIntro, MaterialCard, SearchBar, Footer, BackToTop } from '../../components';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import cardData from '../../config/CardData.mjs';
@@ -43,6 +43,7 @@ const MaterialsPage = () => {
             <MaterialCard material={material} key={material.id} id={material.id} />
           ))}
           <Footer />
+          <BackToTop />
         </>
       );
   };
@@ -51,6 +52,7 @@ const MaterialsPage = () => {
     <div>
       <h1>404 Not Found</h1>
     </div>
+
     </>
   )
 };
