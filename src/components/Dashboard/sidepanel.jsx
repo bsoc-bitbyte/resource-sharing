@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "../Modal";
+import Upload from "./uploadform";
 
 
 const Sidepanel = ({open, setOpen}) => {
+    const [isopen, setIsOpen] = useState(false);
     return (
-        <div className={` Sidepanel ${open ? "w-12" : "w-[16%]"} flex flex-col h-screen ml-2 mt-20 p-3 fixed bg-gray-100 dark:bg-[#44403C] dark:!text-white rounded-lg shadow-md duration-300`}>
+        <div className={` Sidepanel ${open ? "w-12" : "w-[16%]  max-sm:w-[50%]"} flex flex-col h-screen ml-2 mt-20 p-3 fixed bg-gray-100 dark:bg-[#44403C] dark:!text-white rounded-lg shadow-md duration-300`}>
                     <div
                         className={``}>
                         <div className={` ${open ? "w-12" : "w-60"} align `}>
@@ -32,11 +36,12 @@ const Sidepanel = ({open, setOpen}) => {
 
                         <div id='btns' className={` ${open ? "w-0" : "w-full"} ListItems flex-col justify-center h-2/5`} >
 
-                            <button id='uploadBtn' className={` uploadBtn  w-full my-4 rounded-lg pb-8 pt-4 text-center h-8 hover:bg-orange-600 bg-orange-400 font-bold text-gray-100`}>
-                            <Link to='/upload' className='w-full' >
+                            <button id='uploadBtn' className={` uploadBtn  w-full my-4 rounded-lg pb-8 pt-4 text-center h-8 hover:bg-orange-600 bg-orange-400 font-bold text-gray-100`} onClick={() => {
+                                setIsOpen(!isopen);
+                            }}>
                             {open ? null : "UPLOAD"}
-                            </Link>
                             </button>
+                            <Modal content={<Upload/>} open={isopen} setOpen={setIsOpen}/>
                             <button id='uploadsBtn' className={` uploadsBtn  w-full my-4 rounded-lg pb-8 pt-4 text-center h-8 hover:bg-orange-600 bg-orange-400 font-bold text-gray-100`}>
                             <Link to='/uploads' className='w-full' >
                             {open ? null : "UPLOADS"}

@@ -30,7 +30,6 @@ const App = () => {
           <Route path="/uploads" element={<Uploads />}></Route>
           <Route path="/downloads" element={<Downloads />}></Route>
           <Route path="/bookmarks" element={<Bookmarks />}></Route>
-          <Route path="/upload" element={<Upload />}></Route>
 
         </Routes>
       </BrowserRouter>
