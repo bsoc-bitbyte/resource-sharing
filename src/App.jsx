@@ -12,6 +12,7 @@ import Dashboard from './components/Dashboard';
 import Uploads from './components/Dashboard/uploads';
 import Downloads from './components/Dashboard/downloads';
 import Bookmarks from './components/Dashboard/bookmarks';
+import Upload from './components/Dashboard/uploadform';
 const App = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/uploads" element={<Uploads />}></Route>
           <Route path="/downloads" element={<Downloads />}></Route>
           <Route path="/bookmarks" element={<Bookmarks />}></Route>
+          <Route path="/upload" element={<Upload />}></Route>
 
         </Routes>
       </BrowserRouter>

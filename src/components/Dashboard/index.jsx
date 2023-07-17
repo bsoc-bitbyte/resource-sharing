@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavBar } from '../../components';
+import Sidepanel from "./sidepanel";
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
@@ -38,6 +39,11 @@ const Dashboard = () => {
 
               <div id='btns' className={` ${open ? "w-0" : "w-full"} ListItems flex-col justify-center h-2/5`} >
 
+              <button id='uploadBtn' className={` uploadBtn  w-full my-4 rounded-lg pb-8 pt-4 text-center h-8 hover:bg-orange-600 bg-orange-400 font-bold text-gray-100`}>
+                  <Link to='/upload' className='w-full' >
+                  {open ? null : "UPLOAD"}
+                  </Link>
+                </button>
                 <button id='uploadsBtn' className={` uploadsBtn  w-full my-4 rounded-lg pb-8 pt-4 text-center h-8 hover:bg-orange-600 bg-orange-400 font-bold text-gray-100`}>
                   <Link to='/uploads' className='w-full' >
                   {open ? null : "UPLOADS"}
