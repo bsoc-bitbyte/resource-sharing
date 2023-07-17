@@ -16,6 +16,8 @@ const Upload = ({open, setOpen}) => {
                                 <input type="file" id="image" className="w-[85%] h-12 rounded-lg border border-gray-400 text-100 py-2 pl-16 mb-5" accept="image/*" multiple/>
                                 <label htmlFor="pdf" className="text-xl mb-2">PDF:</label>
                                 <input type="file" id="pdf" className="w-[85%] h-12 rounded-lg border border-gray-400 text-100 py-2 pl-16 mb-5" accept="application/pdf"/>
+                                <input type="text" className="w-[85%] h-10 rounded-lg border border-gray-400 text-100 py-2 pl-16 m-5" placeholder="Category"/>
+                                <input type="number" className="w-[85%] h-10 rounded-lg border border-gray-400 text-100 py-2 pl-16 m-5" placeholder="Number of pages"/>
                                 <button 
                                 className={classNames({
                                   'theme-btn-shadow rounded-xl bg-[#3B82F6]': true,

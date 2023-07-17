@@ -9,7 +9,7 @@ const Modal = ({ content, open , setOpen}) => {
     }
     return createPortal(
         <>
-            <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-black/[0.4] flex-col">
+            <div className="min-h-[100vh] min-w-[100vw] flex items-center justify-center bg-black/[0.4] flex-col">
                 <div className="flex justify-right">
                     <button onClick={() => setOpen(!open)}>
                         <img src="/close.svg" alt="" />
