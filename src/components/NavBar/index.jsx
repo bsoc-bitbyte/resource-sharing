@@ -50,6 +50,17 @@ const NavBar = () => {
           >
             <Link to='/login'>Login</Link>
           </button>
+          <button 
+            className={classNames({
+              'theme-btn-shadow rounded-xl bg-[#3B82F6]': true,
+              'px-4 py-2': true,
+              'monu text-sm text-white font-normal': true,
+              'mobile:text-xs': true,
+              'hidden' : (user) ? true: false,
+            })}
+          >
+            <Link to='/Dashboard'>UserName</Link>
+          </button>
           <button
             className={classNames({
               'theme-btn-shadow rounded-xl bg-[#3B82F6]': true,
