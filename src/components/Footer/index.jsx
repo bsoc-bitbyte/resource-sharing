@@ -37,6 +37,7 @@ const Footer = () => {
           <Link to='/'>UniShare</Link>
         </div>
 
+
         <div className="w-[95vw] sm:w-[35rem] mt-4 dark:bg-[#44403C] dark:text-white">
 
           <p className="comfort text-center text-gray-800 font-bold mobile:text-sm dark:bg-[#44403C] dark:text-white">
