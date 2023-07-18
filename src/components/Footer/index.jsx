@@ -22,7 +22,6 @@ const Footer = () => {
   let centerColor = "#B9D9EB";
   return (
     <footer
-
         className={`w-screen min-h-[50vh] py-14 flex flex-col items-center justify-center gap-6 dark:bg-[#44403C] dark:text-white bg-[#B9D9EB]`}
       >
 
@@ -42,8 +41,6 @@ const Footer = () => {
         <div className="w-[95vw] sm:w-[35rem] mt-4 dark:bg-[#44403C] dark:text-white">
 
           <p className="comfort text-center text-gray-800 font-bold mobile:text-sm dark:bg-[#44403C] dark:text-white">
-
-        
             Unishare is a college resource sharing website designed to serve as a dynamic platform for students to collaborate and share resources. Unishare aims to foster an environment where students can easily access and exchange a wide range of educational materials, such as lecture notes, study guides, past exam papers, and more.
           </p>
 

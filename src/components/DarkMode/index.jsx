@@ -55,6 +55,7 @@ const DarkMode = () => {
           "w-7 h-7": true,
           "mobile:w-6 mobile:h-6": true,
         })}
+        style={{ fontSize: '9px' }}
       />
     </div>
   )
