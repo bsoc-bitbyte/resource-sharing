@@ -5,9 +5,9 @@ const HeroSection = () => {
   const [searchParam, setSearchParam] = React.useState(''); // Search Parameter
   return (
     <main>
-      <div className="h-[0vh]" />
+      <div className="h-[15vh]" />
       <div className={classNames({
-        'h-[40vh] w-screen relative': true,
+        'h-[75vh] w-screen relative': true,
         'flex items-center justify-between overflow-hidden': true,
       })}>
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
             "shadow bg-[#E2E8F0] rounded-r-2xl rounded-l-md": true,
             "flex items-center justify-start gap-2": true,
             // "hero-section:w-[18rem] hero-section:text-sm": true,
-            "hero-section-sm:w-[20rem] hero-section-sm:rounded-1g": true,
+            "hero-section-sm:w-[20rem] hero-section-sm:rounded-lg": true,
             "mobile:!w-[90vw]": true,
           })}>
             <img src={"/searchIcon.webp"} alt={"Search"} className={"hero-section:h-6 h-8"} />
